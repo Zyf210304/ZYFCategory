@@ -7,6 +7,7 @@
 //
 
 #import "UIViewController+YFCategory.h"
+
 #define ZOOM_SCALE  (float)([[UIScreen mainScreen] bounds].size.width / 350.0)
 
 
