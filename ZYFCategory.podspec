@@ -1,6 +1,6 @@
 Pod::Spec.new do |s| 
 s.name = "ZYFCategory" 
-s.version = "1.0.1"
+s.version = "1.1.0"
 s.summary = "方便Category" 
 s.description = "方便Category 希望大家喜欢" 
 s.homepage = "https://github.com/Zyf210304/ZYFCategory"
