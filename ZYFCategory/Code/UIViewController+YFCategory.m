@@ -7,7 +7,6 @@
 //
 
 #import "UIViewController+YFCategory.h"
-#import "AppDelegate.h"
 #define ZOOM_SCALE  (float)([[UIScreen mainScreen] bounds].size.width / 350.0)
 
 
@@ -104,7 +103,7 @@
     CGFloat width = 60;
 
     UILabel *tipLabel=nil;
-    UIWindow *window = ((AppDelegate *)[UIApplication sharedApplication].delegate).window;
+    UIWindow *window = ([UIApplication sharedApplication].delegate).window;
     tipLabel=(UILabel *)[window viewWithTag:8888];
     NSDictionary * tdic = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:14],NSFontAttributeName,nil];
     CGSize  actualsize =[text boundingRectWithSize:CGSizeMake(10000,MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin  attributes:tdic context:nil].size;
@@ -130,7 +129,7 @@
 }
 
 - (void)removeToast{
-    UIWindow *window = ((AppDelegate *)[UIApplication sharedApplication].delegate).window;
+    UIWindow *window = ([UIApplication sharedApplication].delegate).window;
     UILabel *label=(UILabel *)[window viewWithTag:8888];
     [label removeFromSuperview];
 }
